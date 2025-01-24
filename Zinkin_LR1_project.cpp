@@ -29,7 +29,13 @@ void Remainder() {
 }
 
 void Division() {
-    // разарбатывает Зинкин, но позже
+    if (C == 0) {
+        std::cout << "Ошибка вычисления, C = 0.";
+    } else {
+        std::cout << "⎣(" << A << " + " << B;
+        std::cout << ") / " << C << "⎦ = ";
+        std::cout << (A + B) / C;
+    }
 }
 
 int main() {

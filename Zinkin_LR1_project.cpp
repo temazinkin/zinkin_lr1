@@ -19,7 +19,13 @@ std::function<void()> EnterNumber(int& varLink, std::string label) {
 }
 
 void Remainder() {
-    // разарбатывает Зинкин, но позже
+    if (C == 0) {
+        std::cout << "Ошибка вычисления, C = 0.";
+    } else {
+        std::cout << "(" << A << " + " << B;
+        std::cout << ") mod " << C << " = ";
+        std::cout << (A + B) % C;
+    }
 }
 
 void Division() {

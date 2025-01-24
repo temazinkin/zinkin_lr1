@@ -13,7 +13,8 @@ int A, B, C;
 
 std::function<void()> EnterNumber(int& varLink, std::string label) {
     return [&varLink, label]() {
-        // разарбатывает Зинкин, но позже
+        std::cout << label << " = ";
+        std::cin >> varLink;
     };
 }
 
